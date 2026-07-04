@@ -1,0 +1,8 @@
+node_modules/
+baileys_auth/
+baileys_auth_*/
+wa_web_bridge_profile/
+*.log
+.env
+.DS_Store
+Thumbs.db

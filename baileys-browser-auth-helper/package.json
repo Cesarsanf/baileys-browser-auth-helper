@@ -1,0 +1,21 @@
+{
+  "name": "baileys-browser-auth-helper",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Community helper for importing an authenticated WhatsApp Web session into Baileys multi-file auth using PR #2676.",
+  "type": "module",
+  "scripts": {
+    "import": "node import_web_auth.js",
+    "verify": "node verify_imported_auth.js",
+    "check": "node --check import_web_auth.js && node --check verify_imported_auth.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "gobeyondpty/Baileys#codex/browser-auth-bridge",
+    "pino": "^9.0.0",
+    "puppeteer-core": "^24.0.0"
+  },
+  "license": "MIT"
+}
